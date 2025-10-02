@@ -29,7 +29,7 @@ sap.ui.define(
             break;
           case "PartidasIndividualesLibroMayor":
             // eslint-disable-next-line fiori-custom/sap-no-hardcoded-url, fiori-custom/sap-no-localhost, fiori-custom/sap-no-location-usage
-            window.location.href = "http://localhost:8082/index.html";
+            window.location.href = "https://orange-island-03edf1a10.2.azurestaticapps.net/";
             break;
           case "SaldosCuentasMayor":
             // eslint-disable-next-line fiori-custom/sap-no-hardcoded-url, fiori-custom/sap-no-localhost, fiori-custom/sap-no-location-usage
