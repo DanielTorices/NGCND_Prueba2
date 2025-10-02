@@ -1,0 +1,18 @@
+{
+    "name": "ns.zlaunchpad.zlaunchpad",
+    "scripts": {
+        "build": "mbt build --mtar ns.zlaunchpad.zlaunchpad.mtar",
+        "build:workspaces": "npm run build --workspaces --if-present",
+        "deploy": "cf deploy mta_archives/ns.zlaunchpad.zlaunchpad.mtar --retries 0",
+        "lint": "npm run lint --workspaces --if-present",
+        "ui5lint": "npm run ui5lint --workspaces --if-present",
+        "start:zlaunchpad": "npm start --workspace zlaunchpad"
+    },
+    "dependencies": {
+        "@ui5/cli": "^4.0.23",
+        "mbt": "^1"
+    },
+    "workspaces": [
+        "zlaunchpad"
+    ]
+}

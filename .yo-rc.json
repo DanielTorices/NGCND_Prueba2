@@ -1,0 +1,16 @@
+{
+  "generator-ui5-project": {
+    "namespaceUI5": "ns.zlaunchpad",
+    "projectName": "zlaunchpad",
+    "uimoduleName": "zlaunchpad",
+    "enableFPM": false,
+    "platform": "Static webserver",
+    "ui5Libs": "Local resources (OpenUI5)",
+    "newDir": false,
+    "initRepo": false,
+    "projectId": "ns.zlaunchpad.zlaunchpad",
+    "uimodules": [
+      "zlaunchpad"
+    ]
+  }
+}

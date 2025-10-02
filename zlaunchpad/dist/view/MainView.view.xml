@@ -1,0 +1,147 @@
+<mvc:View
+    xmlns:core="sap.ui.core"
+    controllerName="zlaunchpad.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+>
+    <f:DynamicPage id="DynamicPage">
+        <f:title>
+            <f:DynamicPageTitle
+                id="_IDGenDynamicPageTitle1"
+                backgroundDesign="Translucent"
+            >
+                <f:heading>
+                    <Title
+                        id="_IDGenTitle"
+                        text="Mis Aplicaciones"
+                    />
+                </f:heading>
+                <f:actions>
+                    <SearchField
+                        id="_IDGenSearchField"
+                        placeholder="Buscar apps..."
+                        liveChange="onSearch1"
+                        width="auto"
+                    />
+                </f:actions>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:content>
+            <IconTabBar
+                id="idIconTabBar"
+                expanded="{device>/isNoPhone}"
+                class="sapUiResponsiveContentPadding"
+                backgroundDesign="Transparent"
+                stretchContentHeight="true"
+            >
+                <items>
+                    <IconTabFilter
+                        id="_IDGenIconTabFilter"
+                        key="finanzas"
+                        text="FINANZAS"
+                    >
+                        <FlexBox
+                            id="_IDGenFlexBox"
+                            wrap="Wrap"
+                            fitContainer="true"
+                        >
+                            <GenericTile
+                                id="VisualizarDocumentos"
+                                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                                header="Visualizar Documentos"
+                                subheader="FB03"
+                                press="onNavigateToApp"
+                            >
+                                <customData>
+                                    <core:CustomData
+                                        key="tileKey"
+                                        value="VisualizarDocumentos"
+                                    />
+                                </customData>
+
+                                <TileContent id="_IDGenTileContent3">
+                                    <ImageContent
+                                        id="_IDGenImageContent3"
+                                        src="sap-icon://sap-box"
+                                    />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile
+                                id="PartidasIndividualesLibroMayor"
+                                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                                header="Partidas Individuales Libro Mayor"
+                                subheader="S_ALR_87012282"
+                                press="onNavigateToApp"
+                            >
+                                <customData>
+                                    <core:CustomData
+                                        key="tileKey"
+                                        value="PartidasIndividualesLibroMayor"
+                                    />
+                                </customData>
+
+                                <TileContent id="_IDGenTileContent">
+                                    <ImageContent
+                                        id="_IDGenImageContent"
+                                        src="sap-icon://activity-items"
+                                    />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile
+                                id="SaldosCuentasMayor"
+                                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                                header="Saldos de Cuentas de Mayor"
+                                subheader="S_ALR_87012277"
+                                press="onNavigateToApp"
+                            >
+                                <customData>
+                                    <core:CustomData
+                                        key="tileKey"
+                                        value="SaldosCuentasMayor"
+                                    />
+                                </customData>
+
+                                <TileContent id="_IDGenTileContent1">
+                                    <ImageContent
+                                        id="_IDGenImageContent1"
+                                        src="sap-icon://opportunities"
+                                    />
+                                </TileContent>
+                            </GenericTile>
+                        </FlexBox>
+                    </IconTabFilter>
+
+                    <IconTabFilter
+                        id="_IDGenIconTabFilter1"
+                        key="ventas"
+                        text="PROCESO DE VENTAS"
+                    >
+                        <FlexBox
+                            id="_IDGenFlexBox1"
+                            wrap="Wrap"
+                            fitContainer="true"
+                        >
+                            <GenericTile
+                                id="_IDGenGenericTile2"
+                                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+                                header="Visualizar pedido abierto: Acceso"
+                                press="onNavigateToProject"
+                            >
+                                <TileContent id="_IDGenTileContent2">
+                                    <ImageContent
+                                        id="_IDGenImageContent2"
+                                        src="sap-icon://education"
+                                    />
+                                </TileContent>
+                            </GenericTile>
+                        </FlexBox>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>
