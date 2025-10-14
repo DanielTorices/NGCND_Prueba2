@@ -50,8 +50,8 @@
                             <GenericTile
                                 id="VisualizarDocumentos"
                                 class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-                                header="Visualizar Documentos"
-                                subheader="FB03"
+                                header="Lista de Documentos de Material"
+                                subheader="MB51"
                                 press="onNavigateToApp"
                             >
                                 <customData>

@@ -25,7 +25,7 @@ sap.ui.define(
         switch (sTileId) {
           case "VisualizarDocumentos":
             // eslint-disable-next-line fiori-custom/sap-no-hardcoded-url, fiori-custom/sap-no-localhost, fiori-custom/sap-no-location-usage
-            window.location.href = "http://localhost:8081/index.html";
+            window.location.href = "https://calm-stone-0bd39a710.1.azurestaticapps.net";
             break;
           case "PartidasIndividualesLibroMayor":
             // eslint-disable-next-line fiori-custom/sap-no-hardcoded-url, fiori-custom/sap-no-localhost, fiori-custom/sap-no-location-usage
